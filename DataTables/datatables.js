@@ -28681,7 +28681,7 @@ var tooltip = $.widget( "ui.tooltip", {
 		var language = settings.oLanguage;
 		var previousSearch = settings.oPreviousSearch;
 		var features = settings.aanFeatures;
-		var input = '<input type="search" class="'+classes.sFilterInput+'"/>';
+		var input = ' <span class="searchlbl">Search: </span><input id="searchtxt" type="search" class="'+classes.sFilterInput+'"/>';
 	
 		var str = language.sSearch;
 		str = str.match(/_INPUT_/) ?
@@ -37416,7 +37416,7 @@ var tooltip = $.widget( "ui.tooltip", {
 			 *      } );
 			 *    } );
 			 */
-			"sSearch": "Search:",
+			"sSearch": "",
 	
 	
 			/**

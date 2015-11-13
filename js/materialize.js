@@ -6454,6 +6454,10 @@ Picker.extend( 'pickadate', DatePicker )
 
   $(document).ready(function(){
     $('input, textarea').characterCounter();
+    $(".button-collapse").sideNav();
+    $('.modal-trigger').leanModal();
   });
 
 }( jQuery ));
+
+
