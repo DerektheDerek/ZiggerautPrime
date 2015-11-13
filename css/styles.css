@@ -35,12 +35,14 @@ p{
 .above-nav{
     background-color:#ffc800;
     height:4px;
-    
+    position:fixed;
+    z-index:9999;
+    width:100%;
 }
 
 .main{
     /*background-color:#4c1a1a;*/
-    height:100%;
+    
 }
 
 .nav-logo{
@@ -103,7 +105,7 @@ h1, h2, h3, h4, h5{
     margin-bottom:10px;
     visibility:hidden;
     position:relative;
-    top:-78px;
+    top:-58px;
 }
 
 .display-btn{
@@ -124,25 +126,9 @@ h1, h2, h3, h4, h5{
     visibility:hidden;
 }
 
-.vertical-align-wrap {
-  position: absolute;
-  display: table;
-}
-
-.vertical-align {
-  display: table-cell;
-}
-
-.vertical-align--middle {
-  vertical-align: middle;
-}
-
-.vertical-align--bottom {
-  vertical-align: bottom;
-}
 
 .banner{
-    height:100%;
+    height:75%;
     width:100%;
     /* Internet Explorer 10 */
     display:-ms-flexbox;
@@ -193,8 +179,20 @@ h1, h2, h3, h4, h5{
 .modal-footer{
     background-color:#404040 !important;
 }
+
+.promo{
+    margin:5px 5%;
+    display:inline;
+    float:right;
+}
+
+.promo-icon{
+    height:20px;
+    width:auto;
+    margin:5px;
+}
 /*******DataTable theming ****** */
-#tblAbilities{
+#tbl{
     visibility:hidden;
 }
 .ui-widget-header {
@@ -239,3 +237,56 @@ table {
 }
 
 /********************************/
+
+@media only screen and (max-width: 992px){
+
+    .brand-logo {
+        left:52% !important;
+    }
+    .title-logo{
+        font-size:60px;
+    }
+    .hell-hole{
+        top:-170px;
+    }
+    .hhtext{
+        font-size:25px;
+    }
+}
+
+@media only screen and (max-width: 320px){ /*iphone 4 small shit*/
+
+    .brand-logo {
+        left:52% !important;
+    }
+    .home-center{
+        top:-60px !important;
+    }
+    .title-logo {
+        font-size: 40px;
+    }
+    .hell-hole {
+        top: -100px;
+    }
+    .hhtext {
+        font-size: 20px;
+    }
+    #chatus {
+        line-height: 57px;
+        font-size: 2.5em;
+    }
+    .modalbtn {
+        height: 60px;
+        width: 60px;
+    }
+    .modaltrigger-container {
+        position: relative;
+        top: -36px;
+    }
+    
+    .deploy {
+        position: relative;
+        top: -81px;
+    }
+    
+}

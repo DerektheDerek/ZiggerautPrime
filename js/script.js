@@ -1,9 +1,10 @@
-$("#tblAbilities").DataTable({
+$("#tbl").DataTable({
     responsive: true,
     paging: false,
     ordering: 4
 });
-$("#tblAbilities").css("visibility", "visible");
+
+$("#tbl").css({opacity: 0, visibility: "visible"}).animate({opacity: 1}, 500);
 
 $(document).ready(function(){
    
