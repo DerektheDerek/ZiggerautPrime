@@ -6459,6 +6459,10 @@ Picker.extend( 'pickadate', DatePicker )
       in_duration: 800, // Transition in duration
       out_duration: 800 // Transition out duration
     });
+    $('#edit-modal').leanModal({
+      in_duration: 100, // Transition in duration
+      out_duration: 100 // Transition out duration
+    });
   });
 
 }( jQuery ));

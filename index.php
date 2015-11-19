@@ -9,29 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
-        <div class="above-nav"></div>
-        <nav role="navigation" class="navbar-fixed">
-            <div class="nav-wrapper navbar">
-              <a href="#" class="brand-logo nav-logo">ZIGGERAUT PRIME</a>
-              <ul id="nav" class="right hide-on-med-and-down">
-                <li><a href="#" class="waves-effect waves-light nav-btn active">HOME</a></li>
-                <li><a href="abilities.php" class="waves-effect waves-light nav-btn">ABILITIES</a></li>
-                <li><a href="equipment.php" class="waves-effect waves-light nav-btn">EQUIPMENT</a></li>
-                <li><a href="spells.php" class="waves-effect waves-light nav-btn">SPELLS</a></li>
-                <li><a href="#" class="waves-effect waves-light nav-btn">TRACKER</a></li>
-                <li><a href="#" class="waves-effect waves-light nav-btn">LOGIN</a></li>
-              </ul>
-              <a href="#" data-activates="nav-mobile" class="button-collapse the-menu"><i class="material-icons">menu</i></a>
-              <ul class="side-nav" id="nav-mobile">
-                <li class="li-fill"><a href="#" class="waves-effect waves-light nav-btn active">HOME</a></li>
-                <li class="li-fill"><a href="abilities.php" class="waves-effect waves-light nav-btn">ABILITIES</a></li>
-                <li class="li-fill"><a href="equipment.php" class="waves-effect waves-light nav-btn">EQUIPMENT</a></li>
-                <li class="li-fill"><a href="spells.php" class="waves-effect waves-light nav-btn">SPELLS</a></li>
-                <li class="li-fill"><a href="#" class="waves-effect waves-light nav-btn">TRACKER</a></li>
-                <li class="li-fill"><a href="#" class="waves-effect waves-light nav-btn">LOGIN</a></li>
-              </ul>
-            </div>
-        </nav>
+        <?php include('header.php'); ?>
         <div class="promo">
             <a href="https://twitter.com/anosina"><img src="img/twitter.png" class="promo-icon responsive-image"/></a>
             <a href="http://github.com/derekthederek/ZiggerautPrime"><img src="img/github.png" class="promo-icon responsive-image"/></a>
@@ -43,9 +21,6 @@
                     </div>
                 <div class="hell-hole center-align">
                     <div class="hhtext">THAT HELL HOLE</div>
-                </div>
-                <div class="center-align deploy">
-                    <a class="display-btn waves-effect waves-light btn" href="http://roll20.net">DEPLOY</a>
                 </div>
                 <div class="modaltrigger-container center-align">
                     <div class="modalbtn circle waves-effect waves-light modal-trigger" data-target="signup">
@@ -80,7 +55,27 @@
                 </div>
             </div>
             <div class="modal-footer center-align">
-                <p>SIGN UP FORM WILL GO HERE</p>
+                <h5>Alpha Registration</h5>
+                <form action="" id="registration-form" method="post"></form>
+                    <div class="col offset-m3 m6 s12">
+                        
+                        <div class="input-field">
+                            <input type="email" id="email" class="validate"/>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" id="new-password" />
+                            <label for="new-password">Password</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" id="new-username" />
+                            <label for="new-username">Username</label>
+                        </div>
+                        <div class="right-align">
+                            <input type="submit" class="waves-effect waves-light btn"></input>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
 

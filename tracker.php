@@ -9,46 +9,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
-     <?php include ('header.php'); ?>
+     <?php include('header.php'); ?>
         <div class="container">
             <div class="row">
-                <div class="col s12">
-                    <h3 class="center-align">ABILITIES</h3>
-                    <?php
-                        include('db_connect.php');
-                        $q = "select * from abilities order by class";
-                        echo '
-                            <table id="tblAbilities" class="stripe compact" cellspacing="0">
-                                <thead>
-                                    <th style="width:20%">Name</th>
-                                    <th>Effect</th>
-                                    <th>Cost</th>
-                                    <th>Class</th>
-                                </thead>
-                                <tbody>
-                            ';
-                        try{
-                            
-                            foreach($dbh->query($q) as $row){
-                                echo '<tr>
-                                      <td style="font-weight:bold">'.$row["name"].'</td>
-                                      <td>'.$row["effect"].'</td>
-                                      <td>'.$row["cost"].'</td>
-                                      <td>'.$row["class"].'</td>
-                                      </tr>
-                                ';
-                            }
-                        }
-                        catch(PDOException $e){
-                            echo "Unable to pull abilities at this time.";
-                        }
-                        
-                        echo '
-                                </tbody>
-                            </table>
-                        ';
-                        $dbh = null;
-                    ?>
+                <div class="col s12 center-align">
+                    <h3 class="center-align">TRACKER</h3>
+                    <br/><br/>
+                    <p>INTITIALIZING MODULE</p>
                 </div>
             </div>
         </div>

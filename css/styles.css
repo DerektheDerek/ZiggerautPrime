@@ -9,6 +9,9 @@
     src: url("../font/Lato-Regular.woff")
 }
 
+.hidden{
+    display:none;
+}
 
 html, body{
     background: url("../img/zp-bg.png") no-repeat center center fixed;
@@ -149,6 +152,7 @@ h1, h2, h3, h4, h5{
     display:box;
     box-pack:center;
     box-align:center;
+    overflow: hidden;
 }
 
 .deploy{
@@ -191,6 +195,52 @@ h1, h2, h3, h4, h5{
     width:auto;
     margin:5px;
 }
+
+
+.login-box{
+    border-radius:15px;
+    padding:10px;
+    margin-top:5%;
+}
+
+#chtxt{
+    display:none;
+}
+
+#chapter, #page{
+    color:#ffc800;
+    font-weight:bold;
+    margin-right:5px;
+}
+
+#loader{
+    position:absolute;
+    top:50%;
+    left:50%;
+}
+
+.cnav-btn{
+    width:105px;
+    height:auto;
+}
+
+.btn{
+    margin:10px;
+}
+
+#open-add{
+    font-size:1.6em;
+    font-weight:bold;
+}
+
+.pull-right{
+    float:right;
+}
+
+.pull-left{
+    float:left;
+}
+
 /*******DataTable theming ****** */
 #tbl{
     visibility:hidden;
@@ -237,6 +287,38 @@ table {
 }
 
 /********************************/
+
+@media only screen and (max-height: 535px){
+
+    .home-center{
+        top:0px;
+    }
+    .hell-hole{
+        top:-120px !important;
+    }
+    .hhtext{
+        font-size:25px;
+    }
+    
+    .modaltrigger-container{
+        top:-100px;
+    }
+    
+    .modalbtn{
+        height:50px;
+        width:50px;
+    }
+    
+    #chatus{
+        line-height:44px;    
+    }
+}
+
+@media only screen and (max-height: 640px){
+    .hell-hole{
+        top:-105px;
+    }
+}
 
 @media only screen and (max-width: 992px){
 
@@ -288,5 +370,4 @@ table {
         position: relative;
         top: -81px;
     }
-    
 }
