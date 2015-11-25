@@ -41,6 +41,7 @@
 */
 
 // t: current time, b: begInnIng value, c: change In value, d: duration
+$(document).ready(function(){
 jQuery.easing['jswing'] = jQuery.easing['swing'];
 
 jQuery.extend( jQuery.easing,
@@ -175,6 +176,7 @@ jQuery.extend( jQuery.easing,
 		return jQuery.easing.easeOutBounce (x, t*2-d, 0, c, d) * .5 + c*.5 + b;
 	}
 });
+
 
 /*
  *
@@ -6398,7 +6400,7 @@ Picker.extend( 'pickadate', DatePicker )
 }));
 
 
-;(function ($) {
+(function ($) {
 
   $.fn.characterCounter = function(){
     return this.each(function(){
@@ -6452,7 +6454,7 @@ Picker.extend( 'pickadate', DatePicker )
     }
   }
 
-  $(document).ready(function(){
+
     $('input, textarea').characterCounter();
     $(".button-collapse").sideNav();
     $('.modal-trigger').leanModal({
@@ -6463,8 +6465,8 @@ Picker.extend( 'pickadate', DatePicker )
       in_duration: 100, // Transition in duration
       out_duration: 100 // Transition out duration
     });
-  });
+
 
 }( jQuery ));
-
+});
 

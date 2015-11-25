@@ -14,8 +14,7 @@
             <div class="row">
                 <div class="col s12 center-align">
                     <h3 class="center-align">TRACKER</h3>
-                    <br/><br/>
-                    <p>INTITIALIZING MODULE</p>
+                    <?php var_dump($_SESSION); ?>
                 </div>
             </div>
         </div>

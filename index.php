@@ -49,42 +49,16 @@
                                 with the home team?</p>
             
                                 <p>Crash land on ZP before we destroy it</p>
+                                <?php if(!isset($_SESSION['username'])) echo '<a href="login.php?signup" class="waves-light waves-effect btn">Register</a>'; ?>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="modal-footer center-align">
-                <h5>Alpha Registration</h5>
-                <form action="" id="registration-form" method="post"></form>
-                    <div class="col offset-m3 m6 s12">
-                        
-                        <div class="input-field">
-                            <input type="email" id="email" class="validate"/>
-                            <label for="email">Email</label>
-                        </div>
-                        <div class="input-field">
-                            <input type="password" id="new-password" />
-                            <label for="new-password">Password</label>
-                        </div>
-                        <div class="input-field">
-                            <input type="text" id="new-username" />
-                            <label for="new-username">Username</label>
-                        </div>
-                        <div class="right-align">
-                            <input type="submit" class="waves-effect waves-light btn"></input>
-                        </div>
-                    </div>
-                </form>
-            </div>
         </div>
-
-        
-        
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script type="text/javascript" src="js/materialize.js"></script>
         <script type="text/javascript" src="DataTables/datatables.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
-        
     </body>
 </html>

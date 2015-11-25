@@ -38,5 +38,3 @@ $(document).ready(function(){
 function fileName(href){
     return href.replace(/^.*[\\\/]/, '');
 }
-
-    

@@ -24,7 +24,6 @@ html, body{
     width:100%;
     box-sizing:border-box;
     
-    
 } 
 
 nav{
@@ -197,10 +196,35 @@ h1, h2, h3, h4, h5{
 }
 
 
+.zpDropdown{
+    width:175px !important;
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+    color:#fff !important;
+    background-color:#000 !important;
+}
+
+.dropdown-content li > a:hover{
+    background-color:#444 !important;
+    color:#ffc800 !important;
+}
+
+.form-icon{
+    margin-top:5px !important;
+    color:#ffc800 !important;
+}
+
+
 .login-box{
     border-radius:15px;
     padding:10px;
     margin-top:5%;
+}
+
+#eemail, #eusername, #epassword{
+    color:red;
+    font-weight:bold;
 }
 
 #chtxt{
@@ -219,6 +243,14 @@ h1, h2, h3, h4, h5{
     left:50%;
 }
 
+#status{
+    display:none;
+}
+
+.cnav-row{
+    width:100%;
+}
+
 .cnav-btn{
     width:105px;
     height:auto;
@@ -226,6 +258,10 @@ h1, h2, h3, h4, h5{
 
 .btn{
     margin:10px;
+}
+
+.thebutton{
+    display:inline;
 }
 
 #open-add{
@@ -241,6 +277,25 @@ h1, h2, h3, h4, h5{
     float:left;
 }
 
+#comic{
+    z-index:100;
+}
+
+iframe{
+    width:800px;
+    height:601px;
+    overflow:hidden;
+}
+
+#outer-comic{
+    height:600px;
+}
+
+#problem{
+    color:red;
+    font-weight:bold;
+    display:none;
+}
 /*******DataTable theming ****** */
 #tbl{
     visibility:hidden;
@@ -257,6 +312,11 @@ h1, h2, h3, h4, h5{
 td{
     color:#000;
     font-size:.85em ;
+}
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:active, input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+    
 }
 
 /*table.dataTable th,table.dataTable td { white-space: nowrap; }*/
@@ -285,6 +345,12 @@ table {
     font-size:1em;
     margin-left:10px;
 }
+
+.cnav-btn{
+    display:none;
+}
+
+
 
 /********************************/
 
@@ -333,6 +399,10 @@ table {
     }
     .hhtext{
         font-size:25px;
+    }
+    .cnav-btn {
+    width: 65px;
+    height: auto;
     }
 }
 
