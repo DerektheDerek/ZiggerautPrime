@@ -23,8 +23,17 @@ html, body{
     color: #fff;
     width:100%;
     box-sizing:border-box;
-    
 } 
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
 
 nav{
     margin-top:0;
@@ -32,6 +41,10 @@ nav{
 
 p{
     font-family: 'Lato', sans-serif;
+}
+
+rect{
+    opacity:0;
 }
 
 .above-nav{
@@ -175,6 +188,11 @@ h1, h2, h3, h4, h5{
     top:-75px;
 }
 
+a{
+    color:#ffc800;
+    
+}
+
 .modal-content{
     background-color:#000;
 }
@@ -185,8 +203,21 @@ h1, h2, h3, h4, h5{
 
 .promo{
     margin:5px 5%;
-    display:inline;
     float:right;
+}
+
+.promo-icons{
+    float:right;
+}
+
+.foot{
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+
+.foot-copy{
+    margin-bottom:3%;
 }
 
 .promo-icon{
@@ -195,9 +226,131 @@ h1, h2, h3, h4, h5{
     margin:5px;
 }
 
+#murder-name{
+    text-align:center;
+    font-size:1.7em;
+}
 
+.header-pv{
+    float:right;
+    color:#fff;
+}
+
+.tracker-main{
+    background-color:black;
+    /*border-left:5px solid #ffc800;
+    border-right:5px solid #ffc800;*/
+    display:none;
+}
+
+.murder-main{
+    width:95% !important;
+    margin:auto;
+}
+
+.close-btn{
+    font-size:.8em;
+}
+
+.close-btn-bk{
+    padding:0 5px 0;
+    margin:5px;
+    cursor:pointer;
+}
+
+.dat-top{
+    margin-top:15px;
+}
+
+.minput{
+    font-size:1.5rem !important;
+}
+
+.header{
+    font-family:'Fjalla One';
+    color:#FFC800;
+    font-weight:bold;
+    font-size:1.6em;
+}
+
+.create-content{
+    background-color:#333;
+    border-radius:10px;
+}
+
+#points-remaining{
+    font-weight:bold;
+    color:#ffc800;
+}
+
+
+.tracker-top{
+    background-color:#222;
+    height:100% !important;
+    /*border-bottom:2px solid #ffc800;*/
+}
+
+.abilities-btn{
+    margin-bottom:10px;
+}
+.track-divider{
+    background-color:#ffc800;
+    height:1px;
+}
 .zpDropdown{
     width:175px !important;
+}
+
+.tracker-label{
+    color:#888;
+    font-size:13px;
+}
+
+.new-murder-btn{
+    background-color:#6b00bd;
+}
+
+.dynamic-value{
+    font-weight:bold;
+    margin-right:20px;
+}
+
+.vcenter-value{
+    position:relative;
+    bottom:50%;
+    height:100px;
+}
+
+.star-icon{
+    font-size:21px;
+    margin-right:10px;
+    position:relative;
+    bottom:5px;
+}
+
+.loadinghud{
+    position:absolute;
+    top:50%;
+    left:50%;
+}
+
+.button-container{
+    text-align:center;
+}
+
+.keelow-container{
+    height:17px;
+    line-height:17px;
+    text-align:center;
+}
+
+.row-number{
+    position:absolute;
+}
+
+.motto{
+    font-style:italic;
+    font-size:.8em;
 }
 
 .dropdown-content li > a, .dropdown-content li > span {
@@ -231,16 +384,91 @@ h1, h2, h3, h4, h5{
     display:none;
 }
 
+#initializing{
+    width:500px;
+    height:20px;
+    position:absolute;
+    top:80%;
+    left:50%;
+    margin-left: -250px;
+    margin-top: -10px;
+}
+
 #chapter, #page{
     color:#ffc800;
     font-weight:bold;
     margin-right:5px;
 }
 
-#loader{
+#loadinghud{
     position:absolute;
-    top:50%;
-    left:50%;
+    height:500px;
+    width:500px;
+    left: 50%;
+    top: 50%; 
+    margin-left: -250px;
+    margin-top: -250px;
+}
+
+#loading-cotainer{
+    position:relative;
+    width:100%;
+    height:100%;
+}
+
+.murder-row{
+    width:100%;
+    background-color:#333;
+    padding:10px;
+    border-top:2px solid #ffc800;
+    border-bottom:2px solid #ffc800;
+    margin-bottom:10px;
+    margin-top:10px;
+}
+
+.murder-btn{
+    margin:10px;
+    padding:0 20px;
+}
+
+.numbered{
+    font-size:.8em;
+    font-weight:bold;
+}
+
+.numbered-divider{
+    margin-left:5%;
+}
+
+.murder-title{
+    font-size:2em;
+    font-family:'Fjalla One';
+    color:#ffc800;
+    font-weight:bold;
+}
+
+.value-icon{
+    height:17px;
+    margin-right:10px;
+    position:relative;
+    bottom:40%;
+}
+
+.card-outer{
+    height:440px;
+    width:100%;
+    background-color:#333;
+    border:1px solid #ffc800;
+    border-radius:10px;
+    margin-bottom:10px
+}
+
+.table-icon{
+    height:30px;
+    margin-right:10px;
+    position:relative;
+    top:10px;
+    float:left;
 }
 
 #status{
@@ -249,6 +477,31 @@ h1, h2, h3, h4, h5{
 
 .cnav-row{
     width:100%;
+}
+
+.recruit-name{
+    font-size:.8em !important;
+    width:90% !important;
+}
+
+.recruit-pts{
+    font-size:.8em;
+    margin-top:5px;
+    margin-right:10px;
+}
+
+.recruit-value{
+    text-align:center;
+}
+
+.recruit-value-icon{
+    height: 30px;
+    width: 30px !important;
+    margin-right: 10px;
+    position: relative;
+    bottom: 40%;
+    cursor: help;
+    text-align:center;
 }
 
 .cnav-btn{
@@ -440,4 +693,30 @@ table {
         position: relative;
         top: -81px;
     }
+}
+
+@media only screen and (max-width: 992px){
+    nav .brand-logo {
+         margin-left:5px !important;   
+    }
+}
+
+.collapsible-header {
+    background-color:#222;
+    border-bottom: 1px solid #ffc800;
+    font-family:'Fjalla One';
+    font-weight:bold;
+    color:#ffc800;
+    
+}
+
+.collapsible-body {
+    border:0;
+    border-bottom:1px solid #ffc800;
+}
+
+.collapsible {
+    border-top: 1px solid #ffc800;
+    border-right: 1px solid #ffc800;
+    border-left: 1px solid #ffc800;
 }

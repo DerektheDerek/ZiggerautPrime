@@ -11,8 +11,10 @@
     <body>
         <?php include('header.php'); ?>
         <div class="promo">
-            <a href="https://twitter.com/anosina"><img src="img/twitter.png" class="promo-icon responsive-image"/></a>
-            <a href="http://github.com/derekthederek/ZiggerautPrime"><img src="img/github.png" class="promo-icon responsive-image"/></a>
+            <div class="promo-icons">
+                <a href="https://twitter.com/anosina"><img src="img/twitter.png" class="promo-icon responsive-image"/></a>
+                <a href="http://github.com/derekthederek/ZiggerautPrime"><img src="img/github.png" class="promo-icon responsive-image"/></a>
+            </div>
         </div>
         <div class="banner">
                 <div class="row">
@@ -61,4 +63,5 @@
         <script type="text/javascript" src="DataTables/datatables.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
     </body>
+    <?php include('footer.php'); ?>
 </html>
